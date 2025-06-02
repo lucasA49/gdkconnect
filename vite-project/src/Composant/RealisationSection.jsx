@@ -40,7 +40,17 @@ const RealizationsSection = () => {
               className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
             >
               <div className="h-48 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center">
-                <div className="text-6xl">{project.image}</div>
+                <div
+                  className={`text-6xl transition-transform duration-700 ease-out ${
+                    index === 0
+                      ? 'hover:translate-x-8 hover:-translate-y-8 hover:rotate-12 hover:drop-shadow-[0_10px_15px_rgba(255,100,0,0.6)]'
+                      : index === 1
+                      ? 'hover:rotate-[360deg]'
+                      : ''
+                  }`}
+                >
+                  {project.image}
+                </div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">{project.title}</h3>

@@ -20,7 +20,7 @@ const Header = () => {
           </div>
 <nav className="hidden lg:flex items-center space-x-8">
   <NavLink
-    to="/#accueil"
+    to="/"
     className={({ isActive }) =>
       `font-medium transition-colors ${
         isActive ? "text-blue-600" : "text-gray-700 hover:text-blue-600"
@@ -30,7 +30,7 @@ const Header = () => {
     Accueil
   </NavLink>
   <NavLink
-    to="/#services"
+    to="/services"
     className={({ isActive }) =>
       `font-medium transition-colors ${
         isActive ? "text-blue-600" : "text-gray-700 hover:text-blue-600"
@@ -40,7 +40,7 @@ const Header = () => {
     Services
   </NavLink>
   <NavLink
-    to="/#realisations"
+    to="/realisations"
     className={({ isActive }) =>
       `font-medium transition-colors ${
         isActive ? "text-blue-600" : "text-gray-700 hover:text-blue-600"
@@ -54,9 +54,11 @@ const Header = () => {
 </nav>
 
           <div className="hidden lg:flex">
-            <button className="bg-gradient-to-r from-amber-600 to-amber-400 text-white px-6 py-3 rounded-lg hover:from-blue-700 hover:to-cyan-600 transition-all duration-300 font-medium shadow-lg hover:shadow-xl">
+            <NavLink 
+            to="/contact"
+            className="bg-gradient-to-r from-amber-600 to-amber-400 text-white px-6 py-3 rounded-lg hover:from-blue-700 hover:to-cyan-600 transition-all duration-300 font-medium shadow-lg hover:shadow-xl">
               Contactez-nous
-            </button>
+            </NavLink>
           </div>
 
           <button
@@ -70,21 +72,21 @@ const Header = () => {
   <div className="lg:hidden">
     <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
       <NavLink
-        to="/#accueil"
+        to="/"
         className="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors font-medium"
         onClick={() => setIsMenuOpen(false)}
       >
         Accueil
       </NavLink>
       <NavLink
-        to="/#services"
+        to="/services"
         className="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors font-medium"
         onClick={() => setIsMenuOpen(false)}
       >
         Services
       </NavLink>
       <NavLink
-        to="/#realisations"
+        to="/realisations"
         className="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors font-medium"
         onClick={() => setIsMenuOpen(false)}
       >
@@ -93,12 +95,13 @@ const Header = () => {
    
  
       <div className="pt-2">
-        <button
+        <NavLink
+        to="/contact"
           className="w-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-4 py-3 rounded-lg hover:from-blue-700 hover:to-cyan-600 transition-all duration-300 font-medium shadow-lg"
           onClick={() => setIsMenuOpen(false)}
         >
           Contactez-nous
-        </button>
+        </NavLink>
      </div>
     </div>
   </div>
