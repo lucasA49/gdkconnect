@@ -20,10 +20,10 @@ const PriseContactServices = () => {
             Obtenir un devis
           </NavLink>
           <NavLink
-            to="/contact"
+            to="/prisederendezvous"
             className="border-2 border-amber-600 text-white-500 px-8 py-3 rounded-lg font-medium hover:bg-red-600 hover:text-white transition-colors"
           >
-            Nous contacter
+            Planifier un appel
           </NavLink>
         </div>
       </div>

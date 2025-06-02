@@ -1,1 +1,20 @@
 @import "tailwindcss";
+/* Personnalisation du calendrier react-calendar avec Tailwind */
+.react-calendar {
+  @apply w-full bg-white rounded-lg shadow-md p-4;
+}
+.react-calendar__navigation {
+  @apply flex justify-between items-center mb-4;
+}
+.react-calendar__tile {
+  @apply text-sm text-gray-700 py-2 rounded-lg hover:bg-blue-100 transition;
+}
+.react-calendar__tile--active {
+  @apply bg-blue-600 text-white;
+}
+.react-calendar__tile--now {
+  @apply bg-blue-100;
+}
+.react-calendar__month-view__weekdays {
+  @apply text-center text-gray-500 text-xs uppercase mb-2;
+}

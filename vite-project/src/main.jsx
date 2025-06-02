@@ -4,6 +4,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import './App.css'
 import Services from "./Pages/Services"
 import Home from "./Pages/Home";
+import PriseRdv from "./Pages/PriseRdv";
+import 'react-calendar/dist/Calendar.css';
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -12,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/services",
     element: <Services />,
+  },
+    {
+    path: "/prisederdv",
+    element: <PriseRdv />,
   },
 ]);
 
