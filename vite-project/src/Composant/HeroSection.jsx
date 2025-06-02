@@ -8,9 +8,9 @@ const HeroSection = () => (
         <div className="space-y-8">
           <div className="space-y-4">
             <h1 className="text-5xl font-bold text-gray-900 leading-tight">
-              Donnez <span className="text-blue-600">vie</span> à vos idées
+              Donnez <span className="text-blue-800">vie</span> à vos idées
               <br />
-              <span className="text-blue-600">digitales</span>
+              <span className="text-blue-800">digitales</span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
               GDK Connect transforme vos visions en réalité numérique grâce à des solutions innovantes et personnalisées.
@@ -18,7 +18,7 @@ const HeroSection = () => (
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2">
+            <button className="bg-amber-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2">
               Découvrir nos services
               <ArrowRight size={20} />
             </button>

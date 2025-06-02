@@ -7,7 +7,7 @@ const ContactSection = () => (
         <div className="space-y-8">
           <div>
             <h2 className="text-4xl font-bold mb-4">
-              Contactez <span className="text-blue-400">GDK Connect</span>
+              Contactez <span className="text-blue-600">GDK Connect</span>
             </h2>
             <p className="text-xl text-gray-300">
               Prêt à concrétiser votre projet ? Discutons ensemble de vos besoins et donnons vie à vos idées.
@@ -29,7 +29,7 @@ const ContactSection = () => (
               </div>
               <div>
                 <p className="text-gray-300">Téléphone</p>
-                <p className="text-white">+33 1 23 45 67 89</p>
+                <p className="text-white">0784864539</p>
               </div>
             </div>
             <div className="flex items-center gap-4">

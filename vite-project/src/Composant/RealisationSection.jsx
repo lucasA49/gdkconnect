@@ -27,7 +27,7 @@ const RealizationsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Nos <span className="text-blue-600">Réalisations</span>
+            Nos <span className="text-blue-800">Réalisations</span>
           </h2>
           <p className="text-xl text-gray-600">
             Découvrez quelques-uns de nos projets récents

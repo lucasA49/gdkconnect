@@ -25,13 +25,12 @@ const Footer = () => (
             <li><a href="#" className="hover:text-white transition-colors">À propos</a></li>
             <li><a href="#" className="hover:text-white transition-colors">Équipe</a></li>
             <li><a href="#" className="hover:text-white transition-colors">Carrières</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
           </ul>
         </div>
         <div>
           <h3 className="text-lg font-semibold mb-4">Contact</h3>
           <ul className="space-y-2 text-gray-400">
-            <li>Paris, France</li>
+            <li>Cholet, France</li>
             <li>contact@gdkconnect.com</li>
             <li>+33 1 23 45 67 89</li>
           </ul>

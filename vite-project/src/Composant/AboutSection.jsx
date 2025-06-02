@@ -7,7 +7,7 @@ const AboutSection = () => (
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
           <h2 className="text-4xl font-bold text-gray-900">
-            À propos de <span className="text-blue-600">GDK Connect</span>
+            À propos de <span className="text-blue-800">GDK Connect</span>
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
             Nous sommes une équipe passionnée de développeurs et designers qui transforment vos idées en solutions digitales innovantes.
