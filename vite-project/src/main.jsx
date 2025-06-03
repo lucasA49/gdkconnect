@@ -6,7 +6,7 @@ import Services from "./Pages/Services"
 import Home from "./Pages/Home";
 import PriseRdv from "./Pages/PriseRdv";
 import 'react-calendar/dist/Calendar.css';
-
+import ContactPage from "./Composant/ContactPage";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -19,6 +19,10 @@ const router = createBrowserRouter([
     {
     path: "/prisederdv",
     element: <PriseRdv />,
+  },
+     {
+    path: "/Contact",
+    element: <ContactPage />,
   },
 ]);
 

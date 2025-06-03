@@ -55,7 +55,7 @@ const Header = () => {
 
           <div className="hidden lg:flex">
             <NavLink 
-            to="/contact"
+            to="/Contact"
             className="bg-gradient-to-r from-amber-600 to-amber-400 text-white px-6 py-3 rounded-lg hover:from-blue-700 hover:to-cyan-600 transition-all duration-300 font-medium shadow-lg hover:shadow-xl">
               Contactez-nous
             </NavLink>

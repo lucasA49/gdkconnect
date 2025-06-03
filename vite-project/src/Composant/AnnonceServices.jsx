@@ -27,7 +27,7 @@ const AnnoncesServices = () => (
         <div className="relative">
           <div className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-3xl p-8 text-white shadow-2xl">
             <div className="text-center">
-              <Globe className="w-16 h-16 mx-auto mb-4" />
+<Globe className="w-16 h-16 mx-auto mb-4 transition-transform duration-500 hover:rotate-[360deg]" />
               <h3 className="text-2xl font-bold mb-2">Solutions Digitales</h3>
               <p className="text-blue-100">Innovation & Performance</p>
             </div>
