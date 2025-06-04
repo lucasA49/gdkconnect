@@ -1,9 +1,9 @@
 import React from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
-
+import Header from "./Header";
 const ContactPage = () => {
   return (
-    <section className="bg-gray-50 py-20 px-4 sm:px-6 lg:px-8">
+    <><Header /><section className="bg-gray-50 py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto text-center mb-16">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
           Contactez <span className="text-blue-600">GDK Connect</span>
@@ -21,24 +21,21 @@ const ContactPage = () => {
             <input
               type="text"
               placeholder="Votre nom"
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"
-            />
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" />
           </div>
           <div>
             <label className="block text-sm font-medium text-gray-700">Email</label>
             <input
               type="email"
               placeholder="Votre email"
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"
-            />
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" />
           </div>
           <div>
             <label className="block text-sm font-medium text-gray-700">Téléphone</label>
             <input
               type="tel"
               placeholder="Votre numéro de téléphone"
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"
-            />
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" />
           </div>
           <div>
             <label className="block text-sm font-medium text-gray-700">Message</label>
@@ -61,7 +58,7 @@ const ContactPage = () => {
           <div className="space-y-6 text-gray-700 mb-6">
             <div className="flex items-center gap-4">
               <MapPin className="text-blue-600 w-6 h-6" />
-              <span>Cholet, France</span>
+              <span>20 Rue du Champ Blanc, 49280 Mazières-en-Mauges</span>
             </div>
             <div className="flex items-center gap-4">
               <Mail className="text-blue-600 w-6 h-6" />
@@ -80,8 +77,8 @@ const ContactPage = () => {
           {/* Google Map */}
           <div className="overflow-hidden rounded-lg border border-gray-200">
             <iframe
-              title="GDK Connect Localisation"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.112010265123!2d-0.8731326844283194!3d47.06016677915085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480878a4f47c52b1%3A0x9b69b013a3edacb7!2sCholet!5e0!3m2!1sfr!2sfr!4v1717400000000!5m2!1sfr!2sfr"
+              title="GDK Connect - Localisation"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.1136956011933!2d-0.8042409999999999!3d47.05762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480648ac81808a83%3A0xa25d97021566905a!2s20%20Rue%20du%20Champ%20Blanc%2C%2049280%20Mazi%C3%A8res-en-Mauges!5e0!3m2!1sfr!2sfr!4v1748986354619!5m2!1sfr!2sfr"
               width="100%"
               height="250"
               allowFullScreen=""
@@ -92,7 +89,7 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section></>
   );
 };
 
