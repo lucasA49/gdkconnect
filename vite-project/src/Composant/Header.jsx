@@ -40,7 +40,7 @@ const Header = () => {
     Services
   </NavLink>
   <NavLink
-    to="/realisations"
+    to="/réalisations"
     className={({ isActive }) =>
       `font-medium transition-colors ${
         isActive ? "text-blue-600" : "text-gray-700 hover:text-blue-600"

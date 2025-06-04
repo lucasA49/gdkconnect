@@ -36,19 +36,19 @@ const Home = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <a href="#accueil" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <a href="/" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               Accueil
             </a>
-            <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <a href="/services" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               Services
             </a>
-            <a href="#realisations" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <a href="/realisations" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               Réalisations
             </a>
             <a href="#a-propos" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               À propos
             </a>
-            <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <a href="/Contact" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               Contact
             </a>
           </nav>
@@ -73,51 +73,60 @@ const Home = () => {
         {isMenuOpen && (
           <div className="lg:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
-              <a
-                href="#accueil"
-                className="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Accueil
-              </a>
-              <a
-                href="#services"
-                className="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Services
-              </a>
-              <a
-                href="#realisations"
-                className="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Réalisations
-              </a>
-              <a
-                href="#a-propos"
-                className="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                À propos
-              </a>
-              <a
-                href="#contact"
-                className="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contact
-              </a>
-              <div className="pt-2">
-                <button 
-                  className="w-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-4 py-3 rounded-lg hover:from-blue-700 hover:to-cyan-600 transition-all duration-300 font-medium shadow-lg"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Contactez-nous
-                </button>
+             import { NavLink } from "react-router-dom";
+
+<NavLink
+  to="/accueil"
+  className="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors font-medium"
+  onClick={() => setIsMenuOpen(false)}
+>
+  Accueil
+</NavLink>
+
+<NavLink
+  to="/services"
+  className="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors font-medium"
+  onClick={() => setIsMenuOpen(false)}
+>
+  Services
+</NavLink>
+
+<NavLink
+  to="/realisations"
+  className="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors font-medium"
+  onClick={() => setIsMenuOpen(false)}
+>
+  Réalisations
+</NavLink>
+
+<NavLink
+  to="/a-propos"
+  className="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors font-medium"
+  onClick={() => setIsMenuOpen(false)}
+>
+  À propos
+</NavLink>
+
+<NavLink
+  to="/contact"
+  className="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors font-medium"
+  onClick={() => setIsMenuOpen(false)}
+>
+  Contact
+</NavLink>
+
+<div className="pt-2">
+  <NavLink
+    to="/contact"
+    onClick={() => setIsMenuOpen(false)}
+    className="block w-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-4 py-3 rounded-lg hover:from-blue-700 hover:to-cyan-600 transition-all duration-300 font-medium shadow-lg text-center"
+  >
+    Contactez-nous
+  </NavLink>
+</div>
+
               </div>
             </div>
-          </div>
         )}
       </div>
     </header>
