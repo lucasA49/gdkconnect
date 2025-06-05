@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 import { Mail, Phone, MapPin } from "lucide-react";
 import Header from "./Header";
-
+import Footer from "./Footer";
 const ContactPage = () => {
   const { register, handleSubmit, reset } = useForm();
   const [statusMessage, setStatusMessage] = useState(null);
@@ -120,7 +120,7 @@ const ContactPage = () => {
               </div>
               <div className="flex items-center gap-4">
                 <Phone className="text-blue-600 w-6 h-6" />
-                <span>+33 1 23 45 67 89</span>
+                <span>07 84 86 45 39</span>
               </div>
               <p className="text-base">
                 Notre équipe vous répondra dans les plus brefs délais. N’hésitez pas à détailler
@@ -143,6 +143,7 @@ const ContactPage = () => {
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 };

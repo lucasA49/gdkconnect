@@ -32,8 +32,8 @@ const Footer = () => (
           <h3 className="text-lg font-semibold mb-4">Contact</h3>
           <ul className="space-y-2 text-gray-400">
             <li>Cholet, France</li>
-            <li>contact@gdkconnect.com</li>
-            <li>+33 1 23 45 67 89</li>
+            <li>gdkconnect@gmail.com</li>
+            <li>07 84 86 45 39</li>
           </ul>
         </div>
       </div>
