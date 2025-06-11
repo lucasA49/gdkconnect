@@ -1,22 +1,27 @@
-// ServicesItem.jsx
 import React from 'react';
 import { Globe, Smartphone, Palette, Shield, Code, Database } from 'lucide-react';
 
-const ServiceItem = ({ icon: Icon, title, description, features = [], gradient }) => (
-  <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow p-8 border border-gray-100">
-    <div className={`w-16 h-16 rounded-2xl ${gradient} flex items-center justify-center mb-6`}>
-      <Icon className="w-8 h-8 text-white" />
+const ServiceItem = ({ icon: Icon, title, description, features = [], gradientTop, gradientBullet }) => (
+  <div className={`rounded-2xl shadow-xl overflow-hidden ${gradientTop} text-white p-0`}>
+    <div className="p-8">
+      <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center mb-6 shadow-md">
+        <Icon className="w-8 h-8 text-white" />
+      </div>
+
+      <h3 className="text-2xl font-bold mb-2">{title}</h3>
+      <p className="text-white/90 mb-6">{description}</p>
     </div>
-    <h3 className="text-2xl font-bold text-gray-900 mb-4">{title}</h3>
-    <p className="text-gray-600 mb-6">{description}</p>
-    <ul className="space-y-2">
-      {features.map((feature, index) => (
-        <li key={index} className="flex items-center text-gray-700">
-          <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
-          {feature}
-        </li>
-      ))}
-    </ul>
+
+    <div className="bg-white text-gray-800 p-6 rounded-t-3xl">
+      <ul className="space-y-2 text-sm font-medium">
+        {features.map((feature, index) => (
+          <li key={index} className="flex items-center">
+            <div className={`w-2 h-2 rounded-full mr-3 ${gradientBullet}`}></div>
+            {feature}
+          </li>
+        ))}
+      </ul>
+    </div>
   </div>
 );
 
@@ -32,7 +37,8 @@ const ServicesItem = () => {
         "Performance et sécurité",
         "CMS intuitif"
       ],
-      gradient: "bg-gradient-to-br from-blue-500 to-blue-600"
+      gradientTop: "bg-gradient-to-br from-orange-400 via-red-500 to-pink-500",
+      gradientBullet: "bg-pink-500"
     },
     {
       icon: Smartphone,
@@ -44,7 +50,8 @@ const ServicesItem = () => {
         "Intégration API complète",
         "Déploiement store"
       ],
-      gradient: "bg-gradient-to-br from-purple-500 to-purple-600"
+      gradientTop: "bg-gradient-to-br from-purple-500 via-indigo-500 to-blue-500",
+      gradientBullet: "bg-blue-500"
     },
     {
       icon: Palette,
@@ -56,7 +63,8 @@ const ServicesItem = () => {
         "Supports print et digital",
         "Charte graphique"
       ],
-      gradient: "bg-gradient-to-br from-pink-500 to-pink-600"
+      gradientTop: "bg-gradient-to-br from-pink-400 via-fuchsia-500 to-purple-600",
+      gradientBullet: "bg-fuchsia-500"
     },
     {
       icon: Shield,
@@ -68,7 +76,8 @@ const ServicesItem = () => {
         "Sauvegarde automatique",
         "Monitoring 24/7"
       ],
-      gradient: "bg-gradient-to-br from-green-500 to-green-600"
+      gradientTop: "bg-gradient-to-br from-green-400 via-emerald-500 to-teal-500",
+      gradientBullet: "bg-emerald-500"
     },
     {
       icon: Code,
@@ -80,7 +89,8 @@ const ServicesItem = () => {
         "Intégrations complexes",
         "Maintenance incluse"
       ],
-      gradient: "bg-gradient-to-br from-indigo-500 to-indigo-600"
+      gradientTop: "bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-500",
+      gradientBullet: "bg-indigo-500"
     },
     {
       icon: Database,
@@ -92,7 +102,9 @@ const ServicesItem = () => {
         "Analytics avancés",
         "Reporting automatisé"
       ],
-      gradient: "bg-gradient-to-br from-teal-500 to-teal-600"
+      
+      gradientTop: "bg-gradient-to-br from-cyan-400 via-sky-500 to-blue-600",
+      gradientBullet: "bg-sky-500"
     }
   ];
 

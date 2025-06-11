@@ -34,24 +34,7 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
-            <a href="/" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-              Accueil
-            </a>
-            <a href="/services" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-              Services
-            </a>
-            <a href="/realisations" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-              Réalisations
-            </a>
-            <a href="#a-propos" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-              À propos
-            </a>
-            <a href="/Contact" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-              Contact
-            </a>
-          </nav>
+    
 
           {/* CTA Button Desktop */}
           <div className="hidden lg:flex">
@@ -150,15 +133,7 @@ const HeroSection = () => (
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
-        <button className="bg-[#F7931E] text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2">
-  Découvrir nos services
-  <ArrowRight size={20} />
-</button>
-
-            <button className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors flex items-center justify-center gap-2">
-              <Play size={20} />
-              Voir nos projets
-            </button>
+      
           </div>
         </div>
         <div className="relative">

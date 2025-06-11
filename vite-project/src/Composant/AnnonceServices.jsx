@@ -1,5 +1,3 @@
-// HeroSection.jsx
-import React from "react";
 import { Globe } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
@@ -16,10 +14,7 @@ const AnnoncesServices = () => (
             De la conception à la réalisation, nous vous aidons à concrétiser vos projets les plus ambitieux.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <NavLink to="/services" className="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition-colors">
-              Découvrir nos solutions
-            </NavLink>
-            <NavLink to="/devis" className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors">
+            <NavLink to="/Contact" className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors">
               Demander un devis
             </NavLink>
           </div>
