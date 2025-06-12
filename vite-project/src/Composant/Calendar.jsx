@@ -1,12 +1,20 @@
+import { useEffect } from "react";
+
 export default function Calendar() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
   return (
-    <div className="flex justify-center mt-12 mb-12">
-      <iframe
-        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1FVnN46cwxCm79NN4UJzFRLQU31PWhZVDlm7ArfJXH7toKcGDQ-rxFRVOsro5Du-rcdm8J1F9R?gv=true"
-        style={{ border: 0 }}
-        className="w-[90%] h-[600px]"
-        frameBorder="0"
-      ></iframe>
+    <div className="min-h-screen flex justify-center items-center bg-white px-4">
+      <div
+        className="calendly-inline-widget w-full max-w-5xl"
+        data-url="https://calendly.com/gdkconnect/30min"
+        style={{ minWidth: "320px", height: "700px" }}
+      ></div>
     </div>
   );
 }

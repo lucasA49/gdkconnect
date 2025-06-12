@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { NavLink } from "react-router-dom";
 import emailjs from "emailjs-com";
 import { Mail, Phone, MapPin } from "lucide-react";
 import Header from "./Header";
 import Footer from "./Footer";
+
 const ContactPage = () => {
   const { register, handleSubmit, reset } = useForm();
   const [statusMessage, setStatusMessage] = useState(null);
@@ -43,9 +45,15 @@ const ContactPage = () => {
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Contactez <span className="text-blue-600">GDK Connect</span>
           </h1>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-gray-600 mb-4">
             Une idée de projet ? Une question ? Nous sommes là pour vous accompagner.
           </p>
+          <NavLink
+            to="/prisederdv"
+            className="inline-block mt-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-5 rounded-xl transition"
+          >
+            Prendre un rendez-vous
+          </NavLink>
         </div>
 
         <div className="grid md:grid-cols-2 gap-10">
@@ -107,7 +115,6 @@ const ContactPage = () => {
             )}
           </form>
 
-          {/* Bloc de contact + Google Map */}
           <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl hover:scale-105 transition-all duration-300">
             <div className="space-y-6 text-gray-700 mb-6">
               <div className="flex items-center gap-4">
@@ -116,7 +123,7 @@ const ContactPage = () => {
               </div>
               <div className="flex items-center gap-4">
                 <Mail className="text-blue-600 w-6 h-6" />
-                <span>contact@gdkconnect.com</span>
+                <span>gdkconnect@gmail.com</span>
               </div>
               <div className="flex items-center gap-4">
                 <Phone className="text-blue-600 w-6 h-6" />
@@ -143,7 +150,7 @@ const ContactPage = () => {
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 };

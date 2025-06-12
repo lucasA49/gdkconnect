@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { Facebook, Instagram, Linkedin } from 'lucide-react';
 
 const Footer = () => (
   <footer className="bg-gray-900 text-white py-12">
@@ -35,6 +36,17 @@ const Footer = () => (
             <li>gdkconnect@gmail.com</li>
             <li>07 84 86 45 39</li>
           </ul>
+          <div className="flex gap-4 mt-4">
+            <NavLink to="https://facebook.com" target="_blank" className="text-gray-400 hover:text-white transition-colors">
+              <Facebook className="w-5 h-5" />
+            </NavLink>
+            <NavLink to="https://instagram.com" target="_blank" className="text-gray-400 hover:text-white transition-colors">
+              <Instagram className="w-5 h-5" />
+            </NavLink>
+            <NavLink to="https://linkedin.com" target="_blank" className="text-gray-400 hover:text-white transition-colors">
+              <Linkedin className="w-5 h-5" />
+            </NavLink>
+          </div>
         </div>
       </div>
       <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">

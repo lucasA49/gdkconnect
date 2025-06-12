@@ -34,7 +34,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gray-900 text-white">
+    <section className="py-20 bg-gray-600 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Bloc Contact Infos */}
@@ -54,7 +54,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-gray-300">Email</p>
-                  <p className="text-white">contact@gdkconnect.com</p>
+                  <p className="text-white">gdkconnect@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
