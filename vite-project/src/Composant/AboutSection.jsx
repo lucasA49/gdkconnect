@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { Users } from 'lucide-react';
 
 const AboutSection = () => (
@@ -28,12 +29,12 @@ const AboutSection = () => (
             </li>
           </ul>
           <div className="flex gap-6 pt-4">
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-              En savoir plus
-            </button>
-            <button className="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-50 transition-colors">
-              Nos valeurs
-            </button>
+            <NavLink
+              to="/prisederdv"
+              className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+            >
+            Discutons de votre projet
+            </NavLink>
           </div>
         </div>
         <div className="relative">

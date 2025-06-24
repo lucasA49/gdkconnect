@@ -15,21 +15,22 @@ const Footer = () => (
         <div>
           <h3 className="text-lg font-semibold mb-4">Services</h3>
           <ul className="space-y-2 text-gray-400">
-            <li><NavLink to="/services/web" className="hover:text-white transition-colors">Développement Web</NavLink></li>
-            <li><NavLink to="/services/mobile" className="hover:text-white transition-colors">Applications Mobiles</NavLink></li>
-            <li><NavLink to="/services/design" className="hover:text-white transition-colors">Design UX/UI</NavLink></li>
-            <li><NavLink to="/services/consulting" className="hover:text-white transition-colors">Consulting</NavLink></li>
+           <li><p className="hover:text-white transition-colors cursor-default">Développement Web</p></li>
+<li><p className="hover:text-white transition-colors cursor-default">Applications Mobiles</p></li>
+<li><p className="hover:text-white transition-colors cursor-default">Design UX/UI</p></li>
+<li><p className="hover:text-white transition-colors cursor-default">Consulting</p></li>
+
           </ul>
         </div>
         <div>
           <h3 className="text-lg font-semibold mb-4">Entreprise</h3>
           <ul className="space-y-2 text-gray-400">
-            <li><NavLink to="/a-propos" className="hover:text-white transition-colors">À propos</NavLink></li>
-            <li><NavLink to="/equipe" className="hover:text-white transition-colors">Équipe</NavLink></li>
-            <li><NavLink to="/carrieres" className="hover:text-white transition-colors">Carrières</NavLink></li>
+            <li> <p className="hover:text-white transition-colors"> Carrières </p> </li>
+            <li> <p className="hover:text-white transition-colors"> </p>  </li>
+            <li> <p className="hover:text-white transition-colors"> </p> </li>
           </ul>
         </div>
-        <div>
+        <div> 
           <h3 className="text-lg font-semibold mb-4">Contact</h3>
           <ul className="space-y-2 text-gray-400">
             <li>Cholet, France</li>

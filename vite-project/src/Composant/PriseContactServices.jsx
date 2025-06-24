@@ -14,17 +14,12 @@ const PriseContactServices = () => {
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <NavLink
-            to="/devis"
-            className="bg-amber-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-red-500 transition-colors"
-          >
-            Obtenir un devis
-          </NavLink>
-          <NavLink
             to="/prisederdv"
-            className="border-2 border-amber-600 text-white-500 px-8 py-3 rounded-lg font-medium hover:bg-red-600 hover:text-white transition-colors"
+            className="bg-amber-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-red-500 transition-colors"
           >
             Planifier un appel
           </NavLink>
+     
         </div>
       </div>
     </section>

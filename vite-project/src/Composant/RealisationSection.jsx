@@ -3,22 +3,25 @@ import React from 'react';
 const RealizationsSection = () => {
   const projects = [
     {
-      title: "Site vitrine - Start-up Tech",
-      description: "Développement d'un site vitrine moderne pour une start-up technologique avec animations et design responsive.",
+      title: "Site vitrine – Start-up technologique",
+      description:
+        "Création d’un site vitrine moderne et animé pour présenter les services d’une start-up, accessible sur tous les appareils.",
       image: "🚀",
-      tags: ["React", "Tailwind", "Animation"]
+      tags: ["Site vitrine", "Design moderne", "Compatible mobile"]
     },
     {
-      title: "Application mobile - E-commerce",
-      description: "Application mobile complète pour une boutique en ligne avec paiement intégré et gestion des commandes.",
+      title: "Application mobile – Boutique en ligne",
+      description:
+        "Application intuitive pour vendre des produits en ligne, avec paiements intégrés et suivi des commandes.",
       image: "📱",
-      tags: ["React Native", "API", "Paiement"]
+      tags: ["Application mobile", "Paiement sécurisé", "Gestion facile"]
     },
     {
-      title: "Plateforme web - SaaS",
-      description: "Plateforme SaaS complète avec tableau de bord, gestion d'utilisateurs et analytics avancés.",
+      title: "Plateforme en ligne – Outils professionnels",
+      description:
+        "Plateforme web pour entreprises, avec tableau de bord, comptes clients et suivi d’activité en temps réel.",
       image: "💼",
-      tags: ["Vue.js", "Node.js", "Database"]
+      tags: ["Espace client", "Tableau de bord", "Statistiques"]
     }
   ];
 
@@ -30,7 +33,7 @@ const RealizationsSection = () => {
             Nos <span className="text-blue-800">Réalisations</span>
           </h2>
           <p className="text-xl text-gray-600">
-            Découvrez quelques-uns de nos projets récents
+            Voici quelques projets récents que nous avons réalisés
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

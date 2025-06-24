@@ -25,10 +25,7 @@ const HeroSection = () => (
               Découvrir nos services
               <ArrowRight size={20} />
             </NavLink>
-            <button className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors flex items-center justify-center gap-2">
-              <Play size={20} />
-              Voir nos projets
-            </button>
+            
           </div>
         </div>
         <div className="relative">

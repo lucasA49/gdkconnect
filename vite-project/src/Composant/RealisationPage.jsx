@@ -1,29 +1,27 @@
-import React from "react";
-
 const projects = [
   {
-    title: "Site vitrine - Start-up Tech",
+    title: "Site vitrine – Rénovation & Isolation",
     description:
-      "Développement d’un site vitrine moderne pour une start-up technologique, avec animations, responsive design et branding sur mesure.",
-    image: "/images/startup-site.jpg", // à adapter
+      "Création d’un site vitrine haut de gamme pour une entreprise spécialisée en rénovation de toiture, ravalement de façade et isolation thermique par l’extérieur, conçu avec des technologies de pointe et un design responsive sur mesure.",
+    image: "/globalreno.png",
   },
   {
-    title: "Application mobile - E-commerce",
+    title: "Site e-commerce – Vente en ligne & paiement sécurisé",
     description:
-      "Application mobile native iOS/Android avec gestion des paiements, des produits et des notifications en temps réel.",
-    image: "/images/ecommerce-app.jpg",
+      "Développement d’un site e-commerce complet avec gestion des produits, système de paiement sécurisé et interface utilisateur optimisée pour tous les appareils.",
+    image: "/retro2.png",
   },
   {
-    title: "Plateforme web - SaaS RH",
+    title: "Application web – Localisation d’eau potable et sanitaires",
     description:
-      "Plateforme SaaS RH avec gestion des employés, tableaux de bord analytiques et système de notifications.",
-    image: "/images/saas-rh.jpg",
+      "Développement d’une application web interactive permettant aux utilisateurs de trouver en temps réel des points d’eau potable et des toilettes publiques à proximité, grâce à la géolocalisation. Interface responsive, carte dynamique et technologies web modernes pour une expérience fluide et accessible sur tous les appareils.",
+    image: "/Walterwater.jpeg",
   },
   {
-    title: "Portfolio Designer UX/UI",
+    title: "Site vitrine – Rénovation & Isolation",
     description:
-      "Création d’un portfolio interactif pour une designer UX/UI avec animations, dark mode et galerie dynamique.",
-    image: "/images/uxui-portfolio.jpg",
+      "Conception d’un site vitrine professionnel pour une entreprise spécialisée dans la rénovation de toiture, le ravalement de façade et l’isolation thermique par l’extérieur. Site responsive, branding sur mesure et intégration des dernières technologies web pour une navigation fluide et une image de marque moderne.",
+    image: "/siteconstruction.png",
   },
 ];
 
@@ -45,11 +43,11 @@ const RealisationsPage = () => {
               key={index}
               className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow"
             >
-              <div className="h-48 w-full overflow-hidden">
+              <div className="h-48 w-full overflow-hidden flex items-center justify-center bg-gray-100">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div className="p-6">
